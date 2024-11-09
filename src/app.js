@@ -131,7 +131,7 @@ const initialize = (ipAddress, userId) => {
 
   const authenticate = (params) => {
     const browser_id = uuidv5(ipAddress, NAMESPACE);
-    const deviceType = `better-grass, ${os.platform}, ${os.release()}`;
+    const deviceType = `desktop, Windows, 10, Edge, 130.0.0.0`;
 
     const authenticationResponse = {
       browser_id,
