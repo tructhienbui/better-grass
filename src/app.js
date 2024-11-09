@@ -171,6 +171,8 @@ const initialize = (ipAddress, userId) => {
     // Update last live connection timestamp
     lastLiveConnectionTimestamp = getUnixTimestamp();
 
+    console.error(`ws.message: ${data}`);
+
     let parsed_message;
     try {
       parsed_message = JSON.parse(data);
