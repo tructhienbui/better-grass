@@ -18,4 +18,5 @@ module.exports = {
   COOKIE_JAR_LIFESPAN: 60 * 60 * 24 * 1000, // 24hrs in ms
   USER_AGENT:
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+  DEVICE_TYPE: "desktop, Windows, 10, Edge, 130.0.0.0"
 };
