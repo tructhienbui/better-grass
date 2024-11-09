@@ -15,6 +15,7 @@ const {
   PING_INTERVAL,
   USER_AGENT,
   COOKIE_JAR_LIFESPAN,
+  DEVICE_TYPE
 } = require("./constants");
 const { prettifyHeaderKey } = require("./utils");
 
@@ -131,14 +132,14 @@ const initialize = (ipAddress, userId) => {
 
   const authenticate = (params) => {
     const browser_id = uuidv5(ipAddress, NAMESPACE);
-    const deviceType = `desktop, Windows, 10, Edge, 130.0.0.0`;
+    //const deviceType = `desktop, Windows, 10, Edge, 130.0.0.0`;
 
     const authenticationResponse = {
       browser_id,
       user_id: userId,
       user_agent: USER_AGENT,
       timestamp: getUnixTimestamp(),
-      device_type: deviceType,
+      device_type: DEVICE_TYPE,
     };
 
     return authenticationResponse;
